@@ -14,18 +14,18 @@ from pathlib import Path
 import os
 from datetime import timedelta
 
-import firebase_admin
-from firebase_admin import credentials,initialize_app
-from firebase_admin.exceptions import FirebaseError
-# Build paths inside the project like this: BASE_DIR / 'subdir'.
-BASE_DIR = Path(__file__).resolve().parent.parent
-service_account_json = os.path.join(BASE_DIR, 'visuwalls', 'visuwalls-ade1a-firebase-adminsdk-k87ne-22d2709b59.json')
-try:
-    cred = credentials.Certificate(service_account_json)
-    firebase_app = initialize_app(cred)
-    print("Firebase connected successfully")
-except FirebaseError as e:
-    print("Failed to connect to Firebase:", e)
+# import firebase_admin
+# from firebase_admin import credentials,initialize_app
+# from firebase_admin.exceptions import FirebaseError
+# # Build paths inside the project like this: BASE_DIR / 'subdir'.
+# BASE_DIR = Path(__file__).resolve().parent.parent
+# service_account_json = os.path.join(BASE_DIR, 'visuwalls', 'visuwalls-ade1a-firebase-adminsdk-k87ne-22d2709b59.json')
+# try:
+#     cred = credentials.Certificate(service_account_json)
+#     firebase_app = initialize_app(cred)
+#     print("Firebase connected successfully")
+# except FirebaseError as e:
+#     print("Failed to connect to Firebase:", e)
 
 
 
