@@ -19,7 +19,7 @@ from firebase_admin import credentials,initialize_app
 from firebase_admin.exceptions import FirebaseError
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
-service_account_json = os.path.join(BASE_DIR, 'visuwalls', 'visuwalls-5f544-firebase-adminsdk-n0rdx-12aad68898.json')
+service_account_json = os.path.join(BASE_DIR, 'visuwalls', 'adminsdk.json')
 try:
     cred = credentials.Certificate(service_account_json)
     firebase_app = initialize_app(cred)
